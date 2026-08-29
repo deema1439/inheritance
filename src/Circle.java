@@ -4,6 +4,7 @@ public class Circle extends Shape {
         super();
         radius = 1.0;
     }
+    //constricte
  public Circle(String color,boolean filed,double radius){
      super(color,filed);
      this.radius=radius;

@@ -1,11 +1,16 @@
 import java.lang.classfile.Superclass;
 
 public class Square extends Rectangle {
+    public Square(double width, double length) {
+        super(width, length);
+    }
 
     public Square(){
         super();
     }
-    public Square (String color,boolean filled,double side){
+
+
+    public Square (String color, boolean filled, double side){
         super(color,filled,side,side);
     }
 

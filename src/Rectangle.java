@@ -1,6 +1,14 @@
 public class Rectangle extends Shape {
     private double width=1.0;
     private double length=1.0;
+
+    public Rectangle(double width, double length) {
+        this.width = width;
+        this.length = length;
+    }
+
+    //rectangle;
+
     public Rectangle(String color,boolean filled,double width,double length){
         super(color,filled);
         this.length=length;
@@ -10,6 +18,7 @@ public class Rectangle extends Shape {
     public Rectangle() {
 
     }
+
 
     public void setWidth(double width){
         this.width=width;
@@ -27,7 +36,7 @@ public class Rectangle extends Shape {
         return width*length;
     }
     public double getPerimeter(){
-        return 2*(width*length);
+        return 2*(width+length);
     }
     public String toString() {
         return "a Rectangle with width="+width+" and length=" +length+ " which is a subclass of " + super.toString();
